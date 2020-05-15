@@ -23,7 +23,6 @@ public class Exercise08 {
 		System.out.println("avg: " + avg);
 		System.out.println(array.length);
 	}
-
 }
 
 
