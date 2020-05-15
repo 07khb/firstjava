@@ -8,6 +8,7 @@ public class EmpMain { // interface 활용방법
 		// 1.입력 2.전체리스트 3.수정 4.삭제 5.종료
 		Scanner scr = new Scanner(System.in);
 		EmpService service = new EmpSerivceImpl();
+//		EmpSerivceImpl service = new EmpSerivceImpl();
 		
 		while (true) {
 			System.out.println("================================");
@@ -31,8 +32,17 @@ public class EmpMain { // interface 활용방법
 			} else if (menu == 2) {
 				service.getEmpList();
 			} else if (menu == 3) {
+				System.out.print("변경 사원번호 입력");
+				int empId = scr.nextInt();
+				System.out.print("급여 입력");
+				int salary = scr.nextInt();
+				Employee emp = new Employee(empId, "", salary, "");
+				service.changeEmp(emp);
 
 			} else if (menu == 4) {
+				System.out.print("삭제할 사원번호 입력:");
+				int empId = scr.nextInt();
+				service.removeEmp(empId);
 
 			} else if (menu == 5) {
 				break;

@@ -22,7 +22,7 @@ public class EmpSerivceImpl implements EmpService {
 	}
 
 	@Override
-	public void remobeEmp(int empId) {
+	public void removeEmp(int empId) {
 		dao.deleteEmp(empId);
 	}
 

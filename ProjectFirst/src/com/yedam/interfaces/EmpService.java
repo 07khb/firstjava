@@ -14,6 +14,6 @@ public interface EmpService { // interface 활용방법
 	public void changeEmp(Employee emp);
 	
 //	한건삭제
-	public void remobeEmp(int empId);
+	public void removeEmp(int empId);
 
 }
