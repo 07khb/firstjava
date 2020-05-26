@@ -1,5 +1,5 @@
 
-package com.yedam.interfaces;
+package com.yedam.list;
 
 import java.util.Scanner;
 

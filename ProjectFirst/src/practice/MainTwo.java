@@ -1,4 +1,4 @@
-package com.yedam.practice;
+package practice;
 
 import java.util.List;
 import java.util.ArrayList;
@@ -35,5 +35,6 @@ public class MainTwo {
          
         return list.toString();
     }
+    
 	} 
 
